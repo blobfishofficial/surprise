@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>For Aaliyah ❤️</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to right, #ff9a9e, #fad0c4);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      color: white;
+      overflow: hidden;
+    }
+
+    /* Container for hearts and text */
+    .heart-container {
+      position: relative;
+      text-align: center;
+      z-index: 1;
+    }
+
+    /* Big hearts animation */
+    .heart {
+      font-size: 5em; /* big hearts */
+      color: rgba(255, 0, 128, 0.7);
+      position: absolute;
+      animation: float 4s ease-in-out infinite alternate;
+    }
+
+    .heart.before {
+      left: -10%;
+      top: 0;
+    }
+
+    .heart.after {
+      right: -10%;
+      top: 0;
+      animation-delay: 2s; /* offset */
+    }
+
+    @keyframes float {
+      0% { transform: translateY(0) scale(1); opacity: 0.8; }
+      50% { transform: translateY(-30px) scale(1.1); opacity: 1; }
+      100% { transform: translateY(0) scale(1); opacity: 0.8; }
+    }
+
+    h1 {
+      font-size: 2.5em;
+      margin: 0.2em 0;
+      z-index: 2;
+      position: relative;
+    }
+
+    p {
+      font-size: 1.5em;
+      margin: 0.2em 0;
+      z-index: 2;
+      position: relative;
+    }
+  </style>
+</head>
+<body>
+  <div class="heart-container">
+    <div class="heart before">❤️</div>
+    <h1>I love my girlfriend Aaliyah so much ❤️</h1>
+    <p>I would do anything for her 💖</p>
+    <p>meow meow🐱</p>
+    <div class="heart after">❤️</div>
+  </div>
+</body>
+</html>
